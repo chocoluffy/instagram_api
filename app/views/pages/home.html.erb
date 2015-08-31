@@ -20,9 +20,14 @@
 					<%= image_tag instagram.images.low_resolution.url %>
 				</div>
 			</div>
-			<div class="profile-image box-effect roll-effect">
-				<%= image_tag instagram.user.profile_picture, :class => "roll-effect" %>
+
+			<div class="mask"></div>
+			<div class="profile-image circle">
+				<%= image_tag instagram.user.profile_picture %>
 			</div>
+
+
+
 		</div>
 		<% end %>
 	</div>
