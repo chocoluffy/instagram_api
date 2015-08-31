@@ -15,3 +15,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+	$("div.thumbnail").hover(function(){
+		$(this).parent().siblings('.caption').addClass("hover");
+	}, function(){
+		$(this).parent().siblings('.caption').removeClass("hover");
+	})
+})

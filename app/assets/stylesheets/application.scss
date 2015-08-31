@@ -12,7 +12,6 @@
  *
  */
 
-@import url(//fonts.googleapis.com/css?family=Pacifico​);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -48,6 +47,25 @@
 	height: 60px;
 }
 
+.thumbnail:before{
+	content: "";
+	background: rgba(161, 106, 209, 0.25);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	transition: 0.7s;
+	opacity: 0;
+}
+
+.thumbnail:hover:before{
+	opacity: 0.75;
+}
+
 .col-md-4 {
 	margin-bottom: 20px;
 }
@@ -55,7 +73,9 @@
 .mask{
 	overflow: hidden;
 	height: 20px;
+
 	&:after{
+
 		content:"";
 		display: block;
 		margin: -25px auto 0;
@@ -72,9 +92,26 @@
 	border: 1px solid #ccc;
 }
 
+.caption{
+	position: absolute;
+	margin: -250px 23px 0 23px;
+	width: 80%;
+	font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica;
+	opacity: 0;
+	pointer-events: none;
 
+	h4{
+		width: 100%;
+		word-wrap: break-word;
+		text-align: center;
+		color: #fff;
+	}
+}
 
-
+.hover{
+	opacity: 1;
+	transition: 0.7s;
+}
 
 /*.roll-effect{
 	border-bottom-left-radius: 800px 40px;
