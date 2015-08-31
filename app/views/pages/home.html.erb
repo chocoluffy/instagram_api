@@ -14,7 +14,16 @@
 <div class="container">
 	<div class="row">
 		<% @search.each do |instagram| %>
-			<%= image_tag instagram.images.low_resolution.url %>
+		<div class="col-sm-8 col-md-4">
+			<div class="profile-panel">
+				<div class="thumbnail">
+					<%= image_tag instagram.images.low_resolution.url %>
+				</div>
+			</div>
+			<div class="profile-image box-effect roll-effect">
+				<%= image_tag instagram.user.profile_picture, :class => "roll-effect" %>
+			</div>
+		</div>
 		<% end %>
 	</div>
 </div>

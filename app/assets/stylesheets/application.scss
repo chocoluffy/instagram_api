@@ -34,3 +34,75 @@
 		color: #000;
 	}
 }
+
+.profile-image{
+	position: absolute;
+	border: 1px solid #ccc;
+	/*box-shadow: 5px 5px 5px #ccc;*/
+	left: 7px;
+	bottom: 12px;
+	width: 100px;
+	height: 100px;
+}
+
+.profile-image img{
+	width: 100%;
+	height: auto;
+}
+
+.roll-effect{
+	border-bottom-left-radius: 800px 40px;
+}
+
+.box-effect:before{
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 22px;
+	left: 3px;
+	width: 60%;
+	top: 80%;
+	max-width: 300px;
+	background: #777;
+	box-shadow: 0 18px 10px 2px rgba(0, 0, 0, 1);
+	transform: rotate(-8deg);
+}
+
+
+/*.box-effect:after{
+	z-index: -1;
+	position: absolute;
+	content: "";
+	bottom: 15px;
+	right: 10px;
+	left: auto;
+	width: 50%;
+	top: 80%;
+	max-width: 300px;
+	background: #777;
+	box-shadow: 0 15px 10px #777;
+	transform: rotate(2deg);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
