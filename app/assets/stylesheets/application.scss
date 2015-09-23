@@ -34,18 +34,12 @@
 	}
 }
 
+
+
 .profile-panel{
 	margin-bottom: -20px;
 }
 
-.profile-image{
-	position: absolute;
-	/*box-shadow: 5px 5px 5px #ccc;*/
-	left: 43%;
-	bottom: 0;
-	width: 60px;
-	height: 60px;
-}
 
 .thumbnail:before{
 	content: "";
@@ -85,9 +79,30 @@
 	};
 }
 
+.profile-image{
+	position: absolute;
+	/*box-shadow: 5px 5px 5px #ccc;*/
+	left: 43%;
+	bottom: 0;
+	width: 60px;
+	height: 60px;
+}
+
 .profile-image img{
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+
+.color-thief-output{
+	opacity: 0;
+	background-color: black;
+	position: absolute;
+	left: 60%;
+	bottom: 0;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	border: 1px solid #ccc;
 }

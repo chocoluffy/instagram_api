@@ -15,6 +15,7 @@ gem 'google-webfonts-rails'
 
 gem 'figaro'
 
+gem 'httparty'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

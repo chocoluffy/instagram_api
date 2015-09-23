@@ -11,22 +11,30 @@
      </form>
 </div>
 
+
+
 <div class="container">
 	<div class="row">
-		<% @search.each do |instagram| %>
+		<% filter_excessive_tags(@search, 5).each do |instagram| %>
 		<div class="col-sm-8 col-md-4">
 			<div class="profile-panel">
 				<div class="thumbnail">
-					<%= image_tag instagram.images.low_resolution.url %>
+					<%= image_tag instagram.images.standard_resolution.url, :class => "thumbnail" %>
 				</div>
 			</div>
+
+
 
 			<div class="mask"></div>
 			<div class="profile-image circle">
 				<%= image_tag instagram.user.profile_picture %>
 			</div>
+			
 			<div class="caption">
-				<h4><%= truncate(instagram.caption.text, length: 140) %></h4>
+				<h4><%= truncate(instagram.caption.text, length: 200) %></h4>
+				<h4><i class="fa fa-heart fa-spin"></i> <%= instagram.likes[:count] %></h4>
+				<h4>tags: <%= instagram.tags.size %></h4>
+				<h4>stat: <%= instagram_tag_stat(@tag) %></h4>
 			</div>
 		</div>
 		<% end %>
