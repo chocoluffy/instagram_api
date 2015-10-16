@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.1'
 group :production do
-	gem 'pg', '0.17.1'
+	gem 'pg'
 	gem 'rails_12factor', '0.0.2'
 	gem 'puma', '2.11.1'
 end
@@ -22,8 +22,8 @@ gem 'httparty'
 gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3'
-  # gem 'pg', '0.17.1'
+	# gem 'sqlite3'
+  gem 'pg'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
