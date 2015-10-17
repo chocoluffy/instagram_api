@@ -1,6 +1,6 @@
 Instagram.configure do |config|
-	config.client_id = ENV["CONFIG.CLIENT_ID"]
-	config.client_secret = ENV["CONFIG.CLIENT_SECRET"]
+	config.client_id = "4a6c329c631e4d89a97183af76325673"
+	config.client_secret = "43bc39b2936440beb4487e7742103a35"
 end
 
 # initializer file:
