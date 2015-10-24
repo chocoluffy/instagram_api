@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-  	access_token = "2154815553.4a6c329.4ac09b0d48f743e28c850acbce20c42b"
+  	access_token = "421573080bac4955ae864f56b974e1d1"
   	client = Instagram.client(access_token: access_token)
   	default_search = client.tag_search("Capital One")
   	if params[:q]
