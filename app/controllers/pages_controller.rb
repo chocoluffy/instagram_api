@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   def home
   	access_token = "2154815553.4a6c329.4ac09b0d48f743e28c850acbce20c42b"
   	client = Instagram.client(access_token: access_token)
-  	default_search = client.tag_search("travel")
+  	default_search = client.tag_search("Capital One")
   	if params[:q]
   		search_queary = client.tag_search(params[:q])
       # 这里使用来自form的parameter
@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     album = [].concat(response)
     max_id = response.pagination.next_max_id
     # token来表示总共需要展示的页数：
-    token = 5
+    token = 2
     while token>0 do 
       response = client.tag_recent_media(@tag, :max_id => max_id)
       max_id = response.pagination.next_max_id

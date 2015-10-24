@@ -8,4 +8,9 @@ module PagesHelper
 		return tag_stats["data"][0]["media_count"]
 	end
 
+	def bad_word_list(text)
+		finder = BadWordDetector.new
+		return finder.find(text)
+	end
+
 end

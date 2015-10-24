@@ -11,6 +11,8 @@ gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'instagram'
 
+gem 'bad_word_detector'
+
 gem 'google-webfonts-rails'
 
 gem 'figaro'
