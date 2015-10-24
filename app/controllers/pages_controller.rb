@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     album = [].concat(response)
     max_id = response.pagination.next_max_id
     # token来表示总共需要展示的页数：
-    token = 2
+    token = 5
     while token>0 do 
       response = client.tag_recent_media(@tag, :max_id => max_id)
       max_id = response.pagination.next_max_id
